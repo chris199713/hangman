@@ -8,5 +8,6 @@ public class Main {
 		System.out.println("asdfasdfwerwjerjwerhl");
 		System.out.println("are you okay???");
 		System.out.println("jajajajaaj");
+		System.out.println("123");
 	}
 }
