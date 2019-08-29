@@ -7,10 +7,10 @@ import javax.swing.JFrame;
 
 public class HangmanFrame {
 	
-	HangmanPanel panel;
+	HangmanPanel2 panel;
 	
 	public HangmanFrame() {
-		panel = new HangmanPanel();		
+		panel = new HangmanPanel2();		
 		JFrame frame = new JFrame();
 		frame.setTitle("Hangman");
 		frame.setSize(730,600);

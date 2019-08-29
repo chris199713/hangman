@@ -28,6 +28,7 @@ public class HangmanGuess {
 	Random r;
 
 	public void chooseWord() {
+		
 		r = new Random();
 
 		// choose a word from the list of words
@@ -80,7 +81,4 @@ public class HangmanGuess {
 		}
 		winOrLoose = Arrays.equals(charArray, hangmanLetters);
 	}
-	
-	
-
 }
