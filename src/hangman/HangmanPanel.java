@@ -21,12 +21,14 @@ public class HangmanPanel extends JPanel implements ActionListener {
 
 		guess = new HangmanGuess();
 		guess.chooseWord();
+
 		this.setSize(800, 100);
 		this.setLayout(null);
 		// this.setLocation(0, 470);
 		this.setVisible(true);
 		this.setFocusable(true);
 
+		// add a to z button to panel
 		letterButtons = new JButton[26];
 
 		int i = 0;
@@ -35,15 +37,16 @@ public class HangmanPanel extends JPanel implements ActionListener {
 			this.add(letterButtons[i]);
 			letterButtons[i].addActionListener(this);
 		}
-
+		// btn a to l 
 		for (int j = 0, k = 0; j < 13; j++, k += 55) {
 			letterButtons[j].setBounds(3 + k, 450, 50, 50);
 		}
-
+		// btn m to z
 		for (int j = 13, k = 0; j < 26; j++, k += 55) {
 			letterButtons[j].setBounds(3 + k, 505, 50, 50);
 		}
 
+		// add newGame btn to panel
 		this.add(newGame);
 		newGame.addActionListener(this);
 		newGame.setBounds(600, 15, 100, 50);
@@ -66,6 +69,8 @@ public class HangmanPanel extends JPanel implements ActionListener {
 		g.drawLine(100, 70, 200, 70);// horizontal
 		g.drawLine(100, 120, 150, 70);// slash
 		g.drawLine(200, 70, 200, 100);// hang
+
+		
 
 		if (guess.wrongGuess == 1) {
 			g.drawOval(170, 100, 60, 60);// head
@@ -132,6 +137,8 @@ public class HangmanPanel extends JPanel implements ActionListener {
 			}
 
 		}
+
+
 		if (guess.winOrLoose == true) {
 			if (guess.wrongGuess == 1) {
 				g.drawOval(170, 100, 60, 60);// head
