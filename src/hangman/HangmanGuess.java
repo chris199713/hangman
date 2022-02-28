@@ -1,14 +1,7 @@
 package hangman;
 
-import java.awt.FlowLayout;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Random;
-import java.util.Scanner;
-import java.util.Set;
-
-import javax.swing.JFrame;
 
 public class HangmanGuess {
 	public String[] hangmanWords = { "apple", "banana", "maggie", "joanne", "sleep", "hello", "ncku", "zero", "love" };
